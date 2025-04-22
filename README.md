@@ -19,6 +19,7 @@ Matlab,Python and other programming languages.
 Your report should contain the table with the success rates of ML techniques. For example,
 
 | ML/DL | Type Success Rate |
+| ----------- | ----------- |
 | kNN | xx% |
 | Decision Tree | xx% |
 | SVM | xx% |
