@@ -3,7 +3,6 @@ import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import accuracy_score
-
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.svm import SVC
@@ -17,7 +16,7 @@ y_train = train_labels['Ytrain']
 
 # Fix the shape of y_train
 if len(y_train.shape) > 1:
-    y_train = np.squeeze(y_train)  # Remove singleton dimensions
+    y_train = np.squeeze(y_train) 
     # If still multi-dimensional, flatten it
     if len(y_train.shape) > 1:
         y_train = y_train.ravel()
@@ -30,7 +29,7 @@ y_test = test_labels['Ytest']
 
 # Fix the shape of y_test
 if len(y_test.shape) > 1:
-    y_test = np.squeeze(y_test)  # Remove singleton dimensions
+    y_test = np.squeeze(y_test)  
     # If still multi-dimensional, flatten it
     if len(y_test.shape) > 1:
         y_test = y_test.ravel()
